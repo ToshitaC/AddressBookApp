@@ -50,6 +50,15 @@ const createAddressBookJSON = () => {
         _state: "Maharashtra",
         _zip: "789101",
         _phoneNumber: "9129008009",
+    },
+    {
+        _id: "3",
+        _fullName: "Kajal Waghmare",
+        _address: "Delhi",
+        _city: "Delhi",
+        _state: "Delhi",
+        _zip: "12102",
+        _phoneNumber: "7894561232",
     }
     ];
     return addressBookContactLocalList;
