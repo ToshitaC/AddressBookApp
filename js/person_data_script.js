@@ -1,5 +1,4 @@
 class Contact {
-
     //getter and setter method
     get id() {
         return this._id;
@@ -11,14 +10,12 @@ class Contact {
         return this._fullName;
     }
     set fullName(fullName) {
-
         const FULL_NAME_REGEX = RegExp("^[A-Z]{1}[a-zA-Z]{2,}[ ][A-Z]{1}[a-zA-Z]{2,}$");
         if (FULL_NAME_REGEX.test(fullName)) {
             this._fullName = fullName;
         } else
             throw "Invalid FullName!";
     }
-
     get address() {
         return this._address;
     }
@@ -37,21 +34,18 @@ class Contact {
     set city(city) {
         this._city = city;
     }
-
     get state() {
         return this._state;
     }
     set state(state) {
         this._state = state;
     }
-
     get zip() {
         return this._zip;
     }
     set zip(zip) {
         this._zip = zip;
     }
-
     get phoneNumber() {
         return this._phoneNumber;
     }
@@ -62,10 +56,9 @@ class Contact {
         } else
             throw "Invalid Phone Number!";
     }
-
-    //method
+    //methodS
     toString() {
-        return "fullname: " + this.fullName + ", phoneNumber: " + this.phoneNumber + ", address: " + this.address +
+        return "id: " + this.id + " fullname: " + this.fullName + ", phoneNumber: " + this.phoneNumber + ", address: " + this.address +
             ", city: " + this.city + ", state: " + this.state + ", zip: " + this.zip;
     }
 }
